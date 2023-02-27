@@ -1,5 +1,5 @@
 # TesteDevOperacional
-Este projeto é referente ao teste para a vaga de Dev Operacional.
+Este projeto é referente ao teste para a vaga do Processo seletivo - Java Spring Boot Developer.
 
 ## Descrição do Projeto
 O projeto consiste em um sistema de vendas que realiza a venda de produtos para empresas e clientes. A aplicação possui classes que representam os usuários, empresas, clientes, produtos e vendas.
