@@ -1,77 +1,38 @@
 # TesteDevOperacional
+Este projeto é referente ao teste para a vaga de Dev Operacional.
 
-Infelizmente tive um problema com meu notebook e só consegui fazer na parte da tarde! Fiz um readme
-com todas as mudanças que eu realizei no projeto. Não me atentei para fazer os commits enquanto ia desenvolvendo.
+## Descrição do Projeto
+O projeto consiste em um sistema de vendas que realiza a venda de produtos para empresas e clientes. A aplicação possui classes que representam os usuários, empresas, clientes, produtos e vendas.
 
-1.(Classe Empresa)  Adicionei uma condição no construtor, caso algum
-parametro for null, irá ocorrer ume excessão
+## Mudanças Realizadas
+Abaixo estão listadas todas as mudanças realizadas no projeto:
 
-2. (Classe Empresa) Adicionei validação de ID, se ele for negativo terá 
-uma excessão e encerrará o programa.
-
-3. (Classe Empresa) Adicionei validação para CNPJ, se a String passada
-tiver menos ou mais de 14 caracteres, vai ocorrer
-uma excessão!
-
-4. (Classe Empresa) Adicionei validação de Taxa, se ele for negativo terá 
-uma excessão e encerrará o programa.
-
-5. (Classe Main) Correção na mensagem "Total Líquido  para empresa"
-para "Total Líquido  para empresa R$"
-
-6. (Classe Main) Correção na mensagem "Saldo Empresa: "
-para "Saldo Empresa: R$"
-
-7. Validação de Nome, se for passado uma string vazia
-ira ocorrer uma excessão
-
-8. (Classe Main) Validação de quantidade produtos disponiveis na 
-hora de uma compra
-
-9. (Classe Cliente)  Adicionei validação para CPF, se a String passada
-tiver menos ou mais de 14 caracteres, vai ocorrer
-uma excessão!
-
-10. (Classe Usuário) Criação de um metodo privado para
-verificar o tipo de usuário, e correção dos retornos nos
-metodos isEmpresa, isUsuario e isAdmin.
-
-11. (Classe Usuário) Validação do construtor, se username
-ou senha forem null ou vazio, ocorre uma excessão.
-
-12. Boas Praticas (Main e Classe Venda) Mudança no
-nome da variavel "código" para "codigo", e metodos
-"getCódigo" e "setCódigo" para "getCodigo" e "setCodigo"
-
-13. (Classe Venda) Validação no metodo setCodigo para não ser possivel
-passar um parametro nulo ou menor que zero.
-
-14.  (Classe Venda) Validação no metodo setItens para não ser possivel
-passar um parametro nulo ou vazio.
-
-15. (Classe Venda) Validação no metodo setValor para não ser possivel
-passar um parametro nulo ou menor que zero.
-
-16. (Classe Venda) Validação no metodo setComissaoSistema para não ser possivel
-passar um parametro nulo ou negativo. 
-
-17. (Classe Produtos) Criação de uma classe para um excessão de estoque
-insuficientes.
-
-18. (Classe Produtos) Validação no metodo setPreco para não ser possivel
-passar um parametro zero ou negativo. 
-
-19. (Classe Produtos) Validação no metodo setQuantidade para não ser possivel
-passar um parametro zero ou negativo. 
-
-20. Main e Classe Vendas, metodo criarVendas foi para a
-classe Vendas.
-
-
-
-
-
-
-
-
-
+### Classe Empresa
+- Adicionada validação no construtor para não deixar passar nenhum parâmetro nulo, caso seja nulo ocorrerá uma exceção;
+- Adicionada validação de ID, se ele for negativo terá uma exceção e encerrará o programa;
+- Adicionada validação para CNPJ, se a string passada tiver menos ou mais de 14 caracteres, ocorrerá uma exceção;
+- Adicionada validação de Taxa, se ele for negativo terá uma exceção e encerrará o programa.
+### Classe Main
+- Corrigida a mensagem "Total Líquido para empresa" para "Total Líquido para empresa R$";
+- Corrigida a mensagem "Saldo Empresa: " para "Saldo Empresa: R$";
+- Adicionada validação de quantidade de produtos disponíveis na hora de uma compra.
+### Classe Cliente
+- Adicionada validação para CPF, se a string passada tiver menos ou mais de 14 caracteres, ocorrerá uma exceção.
+### Classe Usuário
+- Criado um método privado para verificar o tipo de usuário;
+- Corrigidos os retornos nos métodos isEmpresa, isUsuario e isAdmin;
+- Adicionada validação no construtor, se username ou senha forem null ou vazio, ocorrerá uma exceção.
+### Classe Venda
+- Adicionada validação no método setCodigo para não ser possível passar um parâmetro nulo ou menor que zero;
+- Adicionada validação no método setItens para não ser possível passar um parâmetro nulo ou vazio;
+- Adicionada validação no método setValor para não ser possível passar um parâmetro nulo ou menor que zero;
+- Adicionada validação no método setComissaoSistema para não ser possível passar um parâmetro nulo ou negativo.
+### Classe Produtos
+- Criada uma classe para uma exceção de estoque insuficientes;
+- Adicionada validação no método setPreco para não ser possível passar um parâmetro zero ou negativo;
+- Adicionada validação no método setQuantidade para não ser possível passar um parâmetro zero ou negativo.
+### Boas Práticas
+- Alterado o nome da variável "código" para "codigo" e dos métodos "getCódigo" e "setCódigo" para "getCodigo" e "setCodigo" na classe Main e na classe Venda;
+- O método criarVendas foi para a classe Vendas.
+### Conclusão
+Essas são as mudanças realizadas no projeto. Espero que as alterações possam contribuir para melhorar a qualidade do sistema e facilitar a manutenção no futuro.
